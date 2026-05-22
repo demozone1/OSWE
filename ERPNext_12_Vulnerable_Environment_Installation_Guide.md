@@ -223,8 +223,8 @@ source /home/frappe/frappe-bench/env/bin/activate
 ### 7.3 Optional Commands (Execute as Needed)
 
 ```bash
-# bench reinstall
-# bench build
+bench reinstall
+bench build
 deactivate
 ```
 
@@ -234,13 +234,13 @@ deactivate
 
 ```bash
 # Activate the Frappe Bench virtual environment
-# source /home/frappe/frappe-bench/env/bin/activate
+source /home/frappe/frappe-bench/env/bin/activate
 
 # Create a site (database name and site name should be consistent)
-# bench new-site site1.local --mariadb-root-password "Str0ngP@ssw0rd!" --admin-password "Test@12345"
+bench new-site site1.local --mariadb-root-password "Str0ngP@ssw0rd!" --admin-password "Test@12345"
 
 # Install the ERPNext app for this site
-# bench --site site1.local install-app erpnext
+bench --site site1.local install-app erpnext
 
 # Wait for the app installation to complete and exit the virtual environment
 deactivate
