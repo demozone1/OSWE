@@ -223,8 +223,8 @@ source /home/frappe/frappe-bench/env/bin/activate
 ### 7.3 可选命令（按需执行）
 
 ```bash
-# bench reinstall
-# bench build
+bench reinstall
+bench build
 deactivate
 ```
 
@@ -234,14 +234,11 @@ deactivate
 
 ```bash
 # 激活 Frappe Bench 的虚拟环境
-# source /home/frappe/frappe-bench/env/bin/activate
-
+source /home/frappe/frappe-bench/env/bin/activate
 # 创建站点（数据库名和站点名保持一致）
-# bench new-site site1.local --mariadb-root-password "Str0ngP@ssw0rd!" --admin-password "Test@12345"
-
+bench new-site site1.local --mariadb-root-password "Str0ngP@ssw0rd!" --admin-password "Test@12345"
 # 安装 ERPNext 应用到该站点
-# bench --site site1.local install-app erpnext
-
+bench --site site1.local install-app erpnext
 # 等待应用安装完成并退出虚拟环境
 deactivate
 ```
